@@ -29,8 +29,8 @@ for dir in */; do
     echo "$output3" >> "complex.itp"
     echo >> "complex.itp"
     echo "$output4" >> "complex.itp"
-    sed -i "s/lig1/$lig1_id/g" "complex.itp"
-    sed -i "s/lig2/$lig2_id/g" "complex.itp"
+    sed -i "s/${lig1}/${lig1_id}/g" "complex.itp"
+    sed -i "s/${lig2}/${lig2_id}/g" "complex.itp"
     echo "File complex.itp berhasil dibuat."
     wait
 
@@ -43,7 +43,7 @@ for dir in */; do
     echo "; Include complex topology" >> "topol.top"
     echo "#include \"complex.itp\"" >> "topol.top"
     echo >> "topol.top"
-    echo "; Include water topology" >> "topol.top"
+	echo "; Include water topology" >> "topol.top"
     echo "#include \"amber99sb-ildn.ff/tip3p.itp\"" >> "topol.top"
     echo >> "topol.top"
     echo "#ifdef POSRES_WATER" >> "topol.top"
@@ -56,7 +56,7 @@ for dir in */; do
     echo "#include \"amber99sb-ildn.ff/ions.itp\"" >> "topol.top"
     echo >> "topol.top"
     echo "[ system ]" >> "topol.top"
-    echo "$lig1 & $lig2" >> "topol.top"
+    echo "$lig1_id & $lig2_id" >> "topol.top"
     echo >> "topol.top"
     echo "[ molecules ]" >> "topol.top"
     echo "$lig1_id                  1" >> "topol.top"
