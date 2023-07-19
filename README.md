@@ -6,10 +6,11 @@ Cara Penggunaan:
 2. Unduh dan ekstrak paket ladina_liglig ke direktori kerja Anda.
 3. Masuk ke direktori kerja anda.
 4. Pastikan file skrip ladina_liglig.sh memiliki izin eksekusi (chmod +x ladina_liglig.sh).
-5. Siapkan direktori kompleks yang berisi ligan-ligan dalam format mol2.
-6. Tempatkan direktori kompleks ke dalam direktori kerja.
-7. Jalankan skrip ladina_liglig.sh dengan perintah "./ladina_liglig.sh".
-8. Tunggu hingga skrip menyelesaikan prosesnya. Hasil dan file output akan disimpan di masing-masing direktori kompleks.
+5. Siapkan direktori kompleks yang berisi ligan satu dan igan dua dalam format mol2.
+6. Pastikan ligan satu dan ligan dua memiliki ID yang berbeda.
+7. Tempatkan direktori kompleks ke dalam direktori kerja.
+8. Jalankan skrip ladina_liglig.sh dengan perintah "./ladina_liglig.sh".
+9. Tunggu hingga skrip menyelesaikan prosesnya. Hasil dan file output akan disimpan di masing-masing direktori kompleks.
 
 Isi direktori:
 - ladina_liglig.sh: Skrip utama untuk menjalankan langkah-langkah pemodelan molekuler dan simulasi molekuler pada ligan.
