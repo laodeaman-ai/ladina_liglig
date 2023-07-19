@@ -93,10 +93,10 @@ for dir in */; do
 	wait
 	
 	# posre ligand
-	echo -e "2\nq" | gmx make_ndx -f "lig1" -o "(basename "${mol_files[0]}" .mol2)".ndx 
-	gmx genrestr -f "lig1" -n "(basename "${mol_files[0]}" .mol2)".ndx  -o "(basename "${mol_files[0]}" .mol2)".itp -fc 1000 1000 1000 
-	echo -e "3\nq" | gmx make_ndx -f "lig1" -o "(basename "${mol_files[1]}" .mol2)".ndx 
-	gmx genrestr -f "lig1" -n "(basename "${mol_files[1]}" .mol2)".ndx  -o "(basename "${mol_files[1]}" .mol2)".itp -fc 1000 1000 1000 	
+	echo -e "2\nq" | gmx make_ndx -f "$lig1" -o "$lig1_id".ndx 
+	echo -e "3\nq" | gmx genrestr -f "$lig1" -n "$lig1_id".ndx  -o "$lig1_id".itp -fc 1000 1000 1000 
+	echo -e "2\nq" | gmx make_ndx -f "$lig2" -o "$lig2_id".ndx 
+	echo -e "3\nq" | gmx genrestr -f "$lig2" -n "$lig2_id".ndx  -o "$lig2_id".itp -fc 1000 1000 1000 	
 	wait
 	
 	# make index system
