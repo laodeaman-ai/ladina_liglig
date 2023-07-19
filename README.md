@@ -6,7 +6,7 @@ Cara Penggunaan:
 2. Unduh dan ekstrak paket ladina_liglig ke direktori kerja Anda.
 3. Masuk ke direktori kerja anda.
 4. Pastikan file skrip ladina_liglig.sh memiliki izin eksekusi (chmod +x ladina_liglig.sh).
-5. Siapkan direktori kompleks berisi dua file (ligan satu dan ligan dua) dalam format mol2.
+5. Siapkan direktori kompleks berisi dua file (ligan satu dan ligan dua) dalam format mol2 dengan sembarang nama file.
 6. Pastikan ligan satu dan ligan dua memiliki ID molekul (3 karakter angka, huruf kapital, atau kombinasinya) yang berbeda.
 7. Tempatkan direktori kompleks ke dalam direktori kerja.
 8. Jalankan skrip ladina_liglig.sh dengan perintah "./ladina_liglig.sh".
