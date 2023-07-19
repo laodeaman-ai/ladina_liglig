@@ -26,7 +26,7 @@ Catatan:
 - Perhatikan bahwa paket ladina_liglig hanya dapat mengeksekusi system yang terdiri dari kompleks ligan-ligan. Termasuk dalam hal ini adalah kompleks polimer-ligan.
 
 Kontak:
-Developer: La Ode Aman
+La Ode Aman,
 Email: laode_aman@ung.ac.id
 
 
