@@ -23,7 +23,7 @@ Isi direktori:
 
 Catatan:
 - Pastikan Anda sudah memahami dan memiliki pengetahuan dasar tentang GROMACS dan pemodelan molekuler sebelum menggunakan paket ini.
-- Perhatikan bahwa paket ladina_liglig belum tentu sesuai untuk semua kasus penggunaan, dan Anda mungkin perlu memodifikasi atau menyesuaikan skrip sesuai kebutuhan Anda. Paket ladina_liglig hanya dapat mengeksekusi system yang terdiri dari kompleks ligan-ligan. Termasuk dalam hal ini adalah kompleks polimer-ligan.
+- Perhatikan bahwa paket ladina_liglig hanya dapat mengeksekusi system yang terdiri dari kompleks ligan-ligan. Termasuk dalam hal ini adalah kompleks polimer-ligan.
 
 Kontak:
 Developer: La Ode Aman
