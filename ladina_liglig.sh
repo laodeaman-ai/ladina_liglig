@@ -1,5 +1,13 @@
+#!/bin/bash
+
+# Iterate through directories and execute commands for each
 for dir in */; do
     cd "$dir"
+
+    # Function to log output to the log file
+    log_output() {
+        tee -a "ladina.log"
+    }
 
     for mol2 in *.mol2; do
         acpype -i "$mol2" -c gas
@@ -124,5 +132,10 @@ for dir in */; do
     gmx mdrun -v -s md.tpr -deffnm md
     wait
 
+    # Log the output for this iteration to the ladina.log in the current directory
+    ) 2>&1 | log_output
+
+    # Navigate back to the previous directory
     cd ..
+
 done
